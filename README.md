@@ -5,7 +5,6 @@ We are hired by a Cookie Making Company (Flea Cookies) to predict the quality of
 
 ## Ideas and hypothesis
 	* Does calorie content have correlation with quality?
-	* Does calorie content have correlation with quality?
 	* Has the baking temperature something to do with perceived quality?
 
 ## Data preparation
@@ -28,6 +27,13 @@ We are provided a dataset containing features of the cookies as well as their ov
 	* Using Dummies for Butter Type
 
 ### Algorithm selection, Model Creation and Modification
+	* After trying out a number of models we decided to proceed with Logistic Regression as it performs pretty well 
+	with binary classifications, and it yielded us the best accuracy-fitting trade-offs.
+	* We used GridSearch and Cross Validation to further improve our model, our goal was to minimize the accuracy
+	discrepancy between the train and the test prediction, while keeping the accuracy over 0.80
 
 
 ### Conclusions:
+	* It was possible to build a classifier that could separate good and bad cookies with reasonable precision and 	reliability
+	* We did not find a single variable that could strongly predict the quality, but the variables together yielded a good enough result
+	
